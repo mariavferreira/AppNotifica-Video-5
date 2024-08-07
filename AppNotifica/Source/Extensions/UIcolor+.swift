@@ -2,7 +2,6 @@
 //  UIcolor+.swift
 //  AppNotifica
 //
-//  Created by Dario Pintor on 19/10/22.
 //
 
 import Foundation

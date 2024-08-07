@@ -2,7 +2,6 @@
 //  ButtonDefault.swift
 //  AppNotifica
 //
-//  Created by Dario Pintor on 19/10/22.
 //
 
 import Foundation
@@ -14,7 +13,6 @@ class ButtonDefault: UIButton {
         super.init(frame: .zero)
         initDefault(botao: botao)
       }
-    
     
     
     private func initDefault(botao: String) {

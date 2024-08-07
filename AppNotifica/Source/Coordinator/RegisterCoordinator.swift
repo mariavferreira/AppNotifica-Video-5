@@ -2,8 +2,6 @@
 //  RegisterCoordinator.swift
 //  AppNotifica
 //
-//  Created by Dario Pintor on 20/10/22.
-//
 
 import Foundation
 
@@ -24,7 +22,13 @@ class RegisterCoordinator: Coordinator {
 
       func start() {
         let viewController = RegisterViewController()
-            self.navigationController.pushViewController(viewController, animated: true)
+        viewController.onLogarTap = goToLogar
+        self.navigationController.pushViewController(viewController, animated: true)
 
     }
+    
+    private func goToLogar() {
+        navigationController.popViewController(animated: true)
+    }
+    
 }

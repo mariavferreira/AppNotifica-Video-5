@@ -2,7 +2,6 @@
 //  LoginView.swift
 //  AppNotifica
 //
-//  Created by Dario Pintor on 14/10/22.
 //
 
 import Foundation
@@ -18,6 +17,14 @@ class LoginView: UIView {
             setupVisualElements()
             
         }
+    
+    //MARK: - Closures
+    var onLoginTap: (() -> Void)?
+    var onRegisterTap: (() -> Void)?
+    
+    
+    
+    //MARK: - Properties
     //cria a função com as propriadades da imagem no login
     var imageLogin = ImageDefault(image: "ImageLogin")
        
@@ -44,6 +51,9 @@ class LoginView: UIView {
         self.addSubview(senhaTextField)
         self.addSubview(buttonLogar)
         self.addSubview(buttonRegistrar)
+        
+        buttonLogar.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
+        buttonRegistrar.addTarget(self, action: #selector(registerTap), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
         
@@ -85,6 +95,20 @@ class LoginView: UIView {
         
         ])
     }
+    
+    
+    //MARK: - Actions
+    @objc
+    
+    private func loginTap() {
+        onLoginTap?()
+    }
+    
+    @objc
+    private func registerTap() {
+        onRegisterTap?()
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

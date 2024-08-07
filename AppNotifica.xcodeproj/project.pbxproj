@@ -29,6 +29,10 @@
 		4177CC4129013CC9001E2621 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177CC4029013CC9001E2621 /* RegisterViewController.swift */; };
 		4177CC4329013CE8001E2621 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177CC4229013CE8001E2621 /* RegisterCoordinator.swift */; };
 		41994E2628FFFC37009591C4 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41994E2528FFFC37009591C4 /* LabelDefault.swift */; };
+		E956EBBC2C63A243008B654C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956EBBB2C63A243008B654C /* HomeView.swift */; };
+		E956EBBE2C63A25E008B654C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956EBBD2C63A25E008B654C /* HomeViewController.swift */; };
+		E956EBC02C63A9A6008B654C /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956EBBF2C63A9A6008B654C /* HomeCoordinator.swift */; };
+		E956EBC22C63B0FB008B654C /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956EBC12C63B0FA008B654C /* ViewControllerDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		4177CC4029013CC9001E2621 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		4177CC4229013CE8001E2621 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		41994E2528FFFC37009591C4 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
+		E956EBBB2C63A243008B654C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E956EBBD2C63A25E008B654C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E956EBBF2C63A9A6008B654C /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		E956EBC12C63B0FA008B654C /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +193,7 @@
 		415DFB4828FD603E00D249D1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E956EBBA2C63A233008B654C /* Home */,
 				4177CC3D29013C86001E2621 /* Register */,
 				4177CC3C29013C66001E2621 /* Login */,
 			);
@@ -197,6 +206,7 @@
 				415DFB4C28FD604000D249D1 /* LoginCoordinator.swift */,
 				415DFB4D28FD604000D249D1 /* Coordinator.swift */,
 				4177CC4229013CE8001E2621 /* RegisterCoordinator.swift */,
+				E956EBBF2C63A9A6008B654C /* HomeCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -226,8 +236,18 @@
 				415C11DB29000F9A0076ABED /* TextFieldDefault.swift */,
 				415C11DD290017470076ABED /* ButtonDefault.swift */,
 				415C11DF29001A310076ABED /* ImageDefault.swift */,
+				E956EBC12C63B0FA008B654C /* ViewControllerDefault.swift */,
 			);
 			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		E956EBBA2C63A233008B654C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E956EBBB2C63A243008B654C /* HomeView.swift */,
+				E956EBBD2C63A25E008B654C /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,9 +383,12 @@
 			files = (
 				415DFB5128FD604000D249D1 /* Coordinator.swift in Sources */,
 				415DFB4F28FD604000D249D1 /* LoginViewController.swift in Sources */,
+				E956EBC22C63B0FB008B654C /* ViewControllerDefault.swift in Sources */,
 				41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */,
 				4177CC3F29013CB6001E2621 /* RegisterView.swift in Sources */,
 				415DFB5028FD604000D249D1 /* LoginCoordinator.swift in Sources */,
+				E956EBBE2C63A25E008B654C /* HomeViewController.swift in Sources */,
+				E956EBBC2C63A243008B654C /* HomeView.swift in Sources */,
 				41239E8B28F840EA00D92C31 /* AppDelegate.swift in Sources */,
 				4177CC4129013CC9001E2621 /* RegisterViewController.swift in Sources */,
 				41994E2628FFFC37009591C4 /* LabelDefault.swift in Sources */,
@@ -377,6 +400,7 @@
 				4177CC4329013CE8001E2621 /* RegisterCoordinator.swift in Sources */,
 				415DFB4E28FD604000D249D1 /* LoginView.swift in Sources */,
 				41239E8D28F840EA00D92C31 /* SceneDelegate.swift in Sources */,
+				E956EBC02C63A9A6008B654C /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

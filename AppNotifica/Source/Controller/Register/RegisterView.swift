@@ -2,8 +2,7 @@
 //  RegisterView.swift
 //  AppNotifica
 //
-//  Created by Dario Pintor on 20/10/22.
-//
+
 
 import Foundation
 import UIKit
@@ -16,14 +15,14 @@ class RegisterView: UIView {
             // muda a cor de fundo do app para branco
             self.backgroundColor = .viewBackGroundColor
             setupVisualElements()
-            
         }
     
-       
-
-    //cria a função com as propriadades da label no login
-    var imageLabel = LabelDefault(text: "Entre com seu email e sua senha para se registrar", font: UIFont.systemFont(ofSize: 27, weight: .regular))
+    //MARK: - Properties
+    var onLogarTap: (() -> Void)?
     
+    
+    //cria a função com as propriadades da label no login
+    var imageLabel = LabelDefault(text: "Entre com seu email e sua senha para se registrar", font: UIFont.systemFont(ofSize: 25, weight: .regular))
     
     //cria a função com as propriadades da text no login
     var emailTextField = TextFieldDefault (placeholder: "E-mail")
@@ -51,6 +50,8 @@ class RegisterView: UIView {
         self.addSubview(confirmaSenhaTextField)
         self.addSubview(buttonRegistrar)
         self.addSubview(buttonLogar)
+        
+        buttonLogar.addTarget(self, action: #selector(logarTap), for: .touchUpInside)
         
         
         NSLayoutConstraint.activate([
@@ -80,8 +81,6 @@ class RegisterView: UIView {
             confirmaSenhaTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
             confirmaSenhaTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
             
-            
-
             buttonRegistrar.widthAnchor.constraint(equalToConstant: 374),
             buttonRegistrar.heightAnchor.constraint(equalToConstant: 60),
             buttonRegistrar.topAnchor.constraint(equalTo: confirmaSenhaTextField.bottomAnchor, constant: 25),
@@ -93,10 +92,15 @@ class RegisterView: UIView {
             buttonLogar.topAnchor.constraint(equalTo: buttonRegistrar.bottomAnchor, constant: 25),
             buttonLogar.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
             buttonLogar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
-
         
         ])
     }
+    
+    @objc
+    private func logarTap() {
+        onLogarTap?()
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

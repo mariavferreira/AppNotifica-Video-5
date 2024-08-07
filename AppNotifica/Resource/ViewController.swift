@@ -2,8 +2,6 @@
 //  ViewController.swift
 //  AppNotifica
 //
-//  Created by Dario Pintor on 13/10/22.
-//
 
 import UIKit
 

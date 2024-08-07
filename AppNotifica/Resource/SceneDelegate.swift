@@ -2,15 +2,13 @@
 //  SceneDelegate.swift
 //  AppNotifica
 //
-//  Created by Dario Pintor on 13/10/22.
-//
+
 
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -26,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 self.window?.rootViewController = navigationController
                 
                 //passo o navigationController daqui para o coordinator LoginCoordinatior
-                let coordinator = RegisterCoordinator(navigationController: navigationController)
+                let coordinator = LoginCoordinator(navigationController: navigationController)
         
                 coordinator.start()
             }
