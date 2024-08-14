@@ -100,7 +100,6 @@ class LoginView: ViewDefault {
     
     //MARK: - Actions
     @objc
-    
     private func loginTap() {
         onLoginTap?()
     }
@@ -114,13 +113,16 @@ class LoginView: ViewDefault {
 }
 
 extension LoginView: UITextFieldDelegate{
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
         if textField == emailTextField{
-            senhaTextField.becomeFirstResponder()
+            self.senhaTextField.becomeFirstResponder()
         } else {
-            senhaTextField.resignFirstResponder()
+            textField.resignFirstResponder()
         }
         
         return true
     }
+    
 }

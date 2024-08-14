@@ -24,15 +24,19 @@ class LoginCoordinator: Coordinator {
           
         self.navigationController.pushViewController(viewController, animated: true)
           
-          viewController.onLoginTap = goToHome
+          viewController.onLoginTap = {
+              self.goToHome()
+          }
           
-          viewController.onRegisterTap = goToRegister
+          viewController.onRegisterTap = {
+              self.goToRegister()
+          }
         
 
     }
     
     func goToHome() {
-        let coordinator = HomeCoordinator(navigationController: navigationController)
+        let coordinator = TabBarCoordinator(navigationController: navigationController)
         coordinator.start()
     }
     

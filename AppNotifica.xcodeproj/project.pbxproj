@@ -29,6 +29,14 @@
 		4177CC4129013CC9001E2621 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177CC4029013CC9001E2621 /* RegisterViewController.swift */; };
 		4177CC4329013CE8001E2621 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177CC4229013CE8001E2621 /* RegisterCoordinator.swift */; };
 		41994E2628FFFC37009591C4 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41994E2528FFFC37009591C4 /* LabelDefault.swift */; };
+		E91DBF6A2C6CE13100F6496F /* NovaOcorrenciaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DBF692C6CE13100F6496F /* NovaOcorrenciaView.swift */; };
+		E91DBF6C2C6CE1E400F6496F /* NovaOcorrenciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DBF6B2C6CE1E400F6496F /* NovaOcorrenciaViewController.swift */; };
+		E91DBF6E2C6CE2FF00F6496F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DBF6D2C6CE2FF00F6496F /* TabBarController.swift */; };
+		E91DBF712C6CE41700F6496F /* SobreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DBF702C6CE41700F6496F /* SobreView.swift */; };
+		E91DBF732C6CE46E00F6496F /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DBF722C6CE46E00F6496F /* SobreViewController.swift */; };
+		E91DBF752C6CE70400F6496F /* NovaOcorrenciaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DBF742C6CE70400F6496F /* NovaOcorrenciaCoordinator.swift */; };
+		E91DBF772C6CE72800F6496F /* SobreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DBF762C6CE72800F6496F /* SobreCoordinator.swift */; };
+		E91DBF792C6CE74E00F6496F /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DBF782C6CE74E00F6496F /* TabBarCoordinator.swift */; };
 		E956EBBC2C63A243008B654C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956EBBB2C63A243008B654C /* HomeView.swift */; };
 		E956EBBE2C63A25E008B654C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956EBBD2C63A25E008B654C /* HomeViewController.swift */; };
 		E956EBC02C63A9A6008B654C /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956EBBF2C63A9A6008B654C /* HomeCoordinator.swift */; };
@@ -80,6 +88,14 @@
 		4177CC4029013CC9001E2621 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		4177CC4229013CE8001E2621 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		41994E2528FFFC37009591C4 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
+		E91DBF692C6CE13100F6496F /* NovaOcorrenciaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaView.swift; sourceTree = "<group>"; };
+		E91DBF6B2C6CE1E400F6496F /* NovaOcorrenciaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaViewController.swift; sourceTree = "<group>"; };
+		E91DBF6D2C6CE2FF00F6496F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E91DBF702C6CE41700F6496F /* SobreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreView.swift; sourceTree = "<group>"; };
+		E91DBF722C6CE46E00F6496F /* SobreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
+		E91DBF742C6CE70400F6496F /* NovaOcorrenciaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaCoordinator.swift; sourceTree = "<group>"; };
+		E91DBF762C6CE72800F6496F /* SobreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreCoordinator.swift; sourceTree = "<group>"; };
+		E91DBF782C6CE74E00F6496F /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		E956EBBB2C63A243008B654C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E956EBBD2C63A25E008B654C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E956EBBF2C63A9A6008B654C /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
@@ -195,6 +211,9 @@
 		415DFB4828FD603E00D249D1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E91DBF6F2C6CE3F500F6496F /* Sobre */,
+				E91DBF682C6CE11100F6496F /* TabBar */,
+				E91DBF662C6CE0E200F6496F /* NovaOcorrencia */,
 				E956EBBA2C63A233008B654C /* Home */,
 				4177CC3D29013C86001E2621 /* Register */,
 				4177CC3C29013C66001E2621 /* Login */,
@@ -209,6 +228,9 @@
 				415DFB4D28FD604000D249D1 /* Coordinator.swift */,
 				4177CC4229013CE8001E2621 /* RegisterCoordinator.swift */,
 				E956EBBF2C63A9A6008B654C /* HomeCoordinator.swift */,
+				E91DBF742C6CE70400F6496F /* NovaOcorrenciaCoordinator.swift */,
+				E91DBF762C6CE72800F6496F /* SobreCoordinator.swift */,
+				E91DBF782C6CE74E00F6496F /* TabBarCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -242,6 +264,32 @@
 				E956EBC12C63B0FA008B654C /* ViewControllerDefault.swift */,
 			);
 			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		E91DBF662C6CE0E200F6496F /* NovaOcorrencia */ = {
+			isa = PBXGroup;
+			children = (
+				E91DBF692C6CE13100F6496F /* NovaOcorrenciaView.swift */,
+				E91DBF6B2C6CE1E400F6496F /* NovaOcorrenciaViewController.swift */,
+			);
+			path = NovaOcorrencia;
+			sourceTree = "<group>";
+		};
+		E91DBF682C6CE11100F6496F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E91DBF6D2C6CE2FF00F6496F /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E91DBF6F2C6CE3F500F6496F /* Sobre */ = {
+			isa = PBXGroup;
+			children = (
+				E91DBF702C6CE41700F6496F /* SobreView.swift */,
+				E91DBF722C6CE46E00F6496F /* SobreViewController.swift */,
+			);
+			path = Sobre;
 			sourceTree = "<group>";
 		};
 		E956EBBA2C63A233008B654C /* Home */ = {
@@ -384,20 +432,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91DBF772C6CE72800F6496F /* SobreCoordinator.swift in Sources */,
 				415DFB5128FD604000D249D1 /* Coordinator.swift in Sources */,
 				415DFB4F28FD604000D249D1 /* LoginViewController.swift in Sources */,
 				E956EBC22C63B0FB008B654C /* ViewControllerDefault.swift in Sources */,
 				41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */,
+				E91DBF792C6CE74E00F6496F /* TabBarCoordinator.swift in Sources */,
 				4177CC3F29013CB6001E2621 /* RegisterView.swift in Sources */,
+				E91DBF712C6CE41700F6496F /* SobreView.swift in Sources */,
 				415DFB5028FD604000D249D1 /* LoginCoordinator.swift in Sources */,
 				E956EBBE2C63A25E008B654C /* HomeViewController.swift in Sources */,
 				E956EBBC2C63A243008B654C /* HomeView.swift in Sources */,
 				41239E8B28F840EA00D92C31 /* AppDelegate.swift in Sources */,
+				E91DBF6E2C6CE2FF00F6496F /* TabBarController.swift in Sources */,
+				E91DBF6C2C6CE1E400F6496F /* NovaOcorrenciaViewController.swift in Sources */,
 				4177CC4129013CC9001E2621 /* RegisterViewController.swift in Sources */,
 				41994E2628FFFC37009591C4 /* LabelDefault.swift in Sources */,
+				E91DBF6A2C6CE13100F6496F /* NovaOcorrenciaView.swift in Sources */,
+				E91DBF752C6CE70400F6496F /* NovaOcorrenciaCoordinator.swift in Sources */,
 				E9D481AB2C6A375D005549E9 /* ViewDefault.swift in Sources */,
 				41239E9528F840EB00D92C31 /* AppNotifica.xcdatamodeld in Sources */,
 				415C11DE290017470076ABED /* ButtonDefault.swift in Sources */,
+				E91DBF732C6CE46E00F6496F /* SobreViewController.swift in Sources */,
 				415C11DC29000F9A0076ABED /* TextFieldDefault.swift in Sources */,
 				415C11DA290008210076ABED /* UIcolor+.swift in Sources */,
 				415C11E029001A310076ABED /* ImageDefault.swift in Sources */,

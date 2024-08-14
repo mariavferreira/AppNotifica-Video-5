@@ -1,14 +1,15 @@
 //
-//  HomeView.swift
+//  NovaOcorrenciaView.swift
 //  AppNotifica
 //
-//  Created by IFBITIC7 on 07/08/24.
+//  Created by IFBITIC7 on 14/08/24.
 //
 
 import Foundation
 import UIKit
 
-class HomeView: ViewDefault {
+class NovaOcorrenciaView: ViewDefault {
+    
     //MARK: - Closures
     
     //MARK: - Properties
@@ -16,7 +17,7 @@ class HomeView: ViewDefault {
     //MARK: - Inits
     
     override func setupVisualElements() {
-        
+    
     }
     
 }

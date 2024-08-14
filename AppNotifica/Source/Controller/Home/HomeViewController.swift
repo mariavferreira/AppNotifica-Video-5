@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: ViewControllerDefault {
     
     //cria uma variável que é do tipo LoginView
     lazy var homeView: HomeView = {
@@ -24,10 +24,7 @@ class HomeViewController: UIViewController {
     // é executado quando está carregando
        override func viewDidLoad() {
            super.viewDidLoad()
-        self.title = "Home"
-           
-           self.navigationController?.navigationBar.prefersLargeTitles=true
-
+        self.title = "Ocorrências"
        }
 
 }

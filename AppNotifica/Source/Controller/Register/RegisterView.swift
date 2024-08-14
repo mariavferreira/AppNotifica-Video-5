@@ -107,14 +107,18 @@ class RegisterView: ViewDefault, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
         if textField == emailTextField{
-            senhaTextField.becomeFirstResponder()
+            self.senhaTextField.becomeFirstResponder()
+            
         } else {
             if textField == senhaTextField {
-                confirmaSenhaTextField.becomeFirstResponder()
+            self.confirmaSenhaTextField.becomeFirstResponder()
+                
             } else {
                textField.resignFirstResponder()
             }
+            
         }
     }
 }

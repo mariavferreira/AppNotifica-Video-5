@@ -11,7 +11,7 @@ class LoginViewController: ViewControllerDefault {
     var onRegisterTap: (() -> Void)?
     
     //cria uma variável que é do tipo LoginView
-    lazy var viewMain: LoginView = {
+    lazy var loginView: LoginView = {
         let loginView = LoginView()
         loginView.onLoginTap = self.onLoginTap
         loginView.onRegisterTap = self.onRegisterTap
@@ -20,7 +20,7 @@ class LoginViewController: ViewControllerDefault {
     }()
     
        override func loadView(){
-           self.view = viewMain
+           self.view = loginView
        }
        
     // é executado quando está carregando
