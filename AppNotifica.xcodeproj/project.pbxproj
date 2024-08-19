@@ -42,6 +42,7 @@
 		E956EBC02C63A9A6008B654C /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956EBBF2C63A9A6008B654C /* HomeCoordinator.swift */; };
 		E956EBC22C63B0FB008B654C /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956EBC12C63B0FA008B654C /* ViewControllerDefault.swift */; };
 		E9D481AB2C6A375D005549E9 /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D481AA2C6A375D005549E9 /* ViewDefault.swift */; };
+		E9F636102C6F8CB000885996 /* EscolherImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6360F2C6F8CB000885996 /* EscolherImagem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		E956EBBF2C63A9A6008B654C /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		E956EBC12C63B0FA008B654C /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
 		E9D481AA2C6A375D005549E9 /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
+		E9F6360F2C6F8CB000885996 /* EscolherImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolherImagem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +273,7 @@
 			children = (
 				E91DBF692C6CE13100F6496F /* NovaOcorrenciaView.swift */,
 				E91DBF6B2C6CE1E400F6496F /* NovaOcorrenciaViewController.swift */,
+				E9F6360F2C6F8CB000885996 /* EscolherImagem.swift */,
 			);
 			path = NovaOcorrencia;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				E956EBC22C63B0FB008B654C /* ViewControllerDefault.swift in Sources */,
 				41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */,
 				E91DBF792C6CE74E00F6496F /* TabBarCoordinator.swift in Sources */,
+				E9F636102C6F8CB000885996 /* EscolherImagem.swift in Sources */,
 				4177CC3F29013CB6001E2621 /* RegisterView.swift in Sources */,
 				E91DBF712C6CE41700F6496F /* SobreView.swift in Sources */,
 				415DFB5028FD604000D249D1 /* LoginCoordinator.swift in Sources */,
