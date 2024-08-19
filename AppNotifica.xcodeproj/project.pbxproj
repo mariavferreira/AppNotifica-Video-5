@@ -42,6 +42,8 @@
 		E956EBC02C63A9A6008B654C /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956EBBF2C63A9A6008B654C /* HomeCoordinator.swift */; };
 		E956EBC22C63B0FB008B654C /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956EBC12C63B0FA008B654C /* ViewControllerDefault.swift */; };
 		E9D481AB2C6A375D005549E9 /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D481AA2C6A375D005549E9 /* ViewDefault.swift */; };
+		E9D55BF72C7372DF00442E97 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D55BF62C7372DF00442E97 /* HomeViewModel.swift */; };
+		E9D55BFB2C737EDE00442E97 /* NovaOcorrenciaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D55BFA2C737EDE00442E97 /* NovaOcorrenciaViewModel.swift */; };
 		E9F636102C6F8CB000885996 /* EscolherImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6360F2C6F8CB000885996 /* EscolherImagem.swift */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +104,8 @@
 		E956EBBF2C63A9A6008B654C /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		E956EBC12C63B0FA008B654C /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
 		E9D481AA2C6A375D005549E9 /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
+		E9D55BF62C7372DF00442E97 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E9D55BFA2C737EDE00442E97 /* NovaOcorrenciaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaViewModel.swift; sourceTree = "<group>"; };
 		E9F6360F2C6F8CB000885996 /* EscolherImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolherImagem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -274,6 +278,7 @@
 				E91DBF692C6CE13100F6496F /* NovaOcorrenciaView.swift */,
 				E91DBF6B2C6CE1E400F6496F /* NovaOcorrenciaViewController.swift */,
 				E9F6360F2C6F8CB000885996 /* EscolherImagem.swift */,
+				E9D55BFA2C737EDE00442E97 /* NovaOcorrenciaViewModel.swift */,
 			);
 			path = NovaOcorrencia;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 			children = (
 				E956EBBB2C63A243008B654C /* HomeView.swift */,
 				E956EBBD2C63A25E008B654C /* HomeViewController.swift */,
+				E9D55BF62C7372DF00442E97 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -368,7 +374,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					41239E8628F840EA00D92C31 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -464,6 +470,8 @@
 				4177CC4329013CE8001E2621 /* RegisterCoordinator.swift in Sources */,
 				415DFB4E28FD604000D249D1 /* LoginView.swift in Sources */,
 				41239E8D28F840EA00D92C31 /* SceneDelegate.swift in Sources */,
+				E9D55BFB2C737EDE00442E97 /* NovaOcorrenciaViewModel.swift in Sources */,
+				E9D55BF72C7372DF00442E97 /* HomeViewModel.swift in Sources */,
 				E956EBC02C63A9A6008B654C /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,6 +564,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -616,6 +625,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

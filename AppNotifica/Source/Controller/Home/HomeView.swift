@@ -9,11 +9,17 @@ import Foundation
 import UIKit
 
 class HomeView: ViewDefault {
-    //MARK: - Closures
+   
+    var viewModel: HomeViewModel
     
-    //MARK: - Properties
+    init(viewModel: HomeViewModel){
+        self.viewModel = viewModel
+        super.init(frame: .zero)
+    }
     
-    //MARK: - Inits
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func setupVisualElements() {
         

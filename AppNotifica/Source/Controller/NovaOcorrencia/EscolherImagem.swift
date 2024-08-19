@@ -16,11 +16,15 @@ class EscolherImagem: NSObject, UIImagePickerControllerDelegate, UINavigationCon
     //Cria um alerta
     var alerta = UIAlertController(title: "Escolha uma opção", message: nil, preferredStyle: .actionSheet)
     
+    //Cria um UIViewController
+    var viewController: UIViewController?
+    
     //Cria um callback @escaping
     var retornoSelecionador: ((UIImage) -> ())?
     
     //Função principal
     func selecionadorImagem(_ viewController: UIViewController, _ retorno: @escaping ((UIImage) -> ())) {
+        
         /* Declara o callback dessa função como sendo a variável externa pickImageCallback, isso serve para o retorno dessa função estar em outro método, no caso, após a escolha da imagem. */
         retornoSelecionador = retorno
         
@@ -28,7 +32,7 @@ class EscolherImagem: NSObject, UIImagePickerControllerDelegate, UINavigationCon
         self.viewController = viewController
         
         //Cria uma açao que chama o metodo "openCamera"
-        let camera = UIAlertAction(title: "Camera", style: default){
+        let camera = UIAlertAction(title: "Camera", style: .default){
             UIAlertAction in
             self.abrirCamera()
         }
