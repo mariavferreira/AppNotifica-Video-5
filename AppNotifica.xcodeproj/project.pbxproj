@@ -41,6 +41,8 @@
 		E956EBBE2C63A25E008B654C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956EBBD2C63A25E008B654C /* HomeViewController.swift */; };
 		E956EBC02C63A9A6008B654C /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956EBBF2C63A9A6008B654C /* HomeCoordinator.swift */; };
 		E956EBC22C63B0FB008B654C /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956EBC12C63B0FA008B654C /* ViewControllerDefault.swift */; };
+		E9A9D11D2C762CEA0029B194 /* Ocorrencias.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A9D11C2C762CEA0029B194 /* Ocorrencias.swift */; };
+		E9A9D11F2C762F060029B194 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A9D11E2C762F060029B194 /* DataManager.swift */; };
 		E9D481AB2C6A375D005549E9 /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D481AA2C6A375D005549E9 /* ViewDefault.swift */; };
 		E9D55BF72C7372DF00442E97 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D55BF62C7372DF00442E97 /* HomeViewModel.swift */; };
 		E9D55BFB2C737EDE00442E97 /* NovaOcorrenciaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D55BFA2C737EDE00442E97 /* NovaOcorrenciaViewModel.swift */; };
@@ -103,6 +105,8 @@
 		E956EBBD2C63A25E008B654C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E956EBBF2C63A9A6008B654C /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		E956EBC12C63B0FA008B654C /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
+		E9A9D11C2C762CEA0029B194 /* Ocorrencias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocorrencias.swift; sourceTree = "<group>"; };
+		E9A9D11E2C762F060029B194 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		E9D481AA2C6A375D005549E9 /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
 		E9D55BF62C7372DF00442E97 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E9D55BFA2C737EDE00442E97 /* NovaOcorrenciaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaViewModel.swift; sourceTree = "<group>"; };
@@ -268,6 +272,7 @@
 				415C11DF29001A310076ABED /* ImageDefault.swift */,
 				E9D481AA2C6A375D005549E9 /* ViewDefault.swift */,
 				E956EBC12C63B0FA008B654C /* ViewControllerDefault.swift */,
+				E9A9D11E2C762F060029B194 /* DataManager.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				E956EBBB2C63A243008B654C /* HomeView.swift */,
 				E956EBBD2C63A25E008B654C /* HomeViewController.swift */,
 				E9D55BF62C7372DF00442E97 /* HomeViewModel.swift */,
+				E9A9D11C2C762CEA0029B194 /* Ocorrencias.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -450,6 +456,7 @@
 				E9F636102C6F8CB000885996 /* EscolherImagem.swift in Sources */,
 				4177CC3F29013CB6001E2621 /* RegisterView.swift in Sources */,
 				E91DBF712C6CE41700F6496F /* SobreView.swift in Sources */,
+				E9A9D11F2C762F060029B194 /* DataManager.swift in Sources */,
 				415DFB5028FD604000D249D1 /* LoginCoordinator.swift in Sources */,
 				E956EBBE2C63A25E008B654C /* HomeViewController.swift in Sources */,
 				E956EBBC2C63A243008B654C /* HomeView.swift in Sources */,
@@ -461,6 +468,7 @@
 				E91DBF6A2C6CE13100F6496F /* NovaOcorrenciaView.swift in Sources */,
 				E91DBF752C6CE70400F6496F /* NovaOcorrenciaCoordinator.swift in Sources */,
 				E9D481AB2C6A375D005549E9 /* ViewDefault.swift in Sources */,
+				E9A9D11D2C762CEA0029B194 /* Ocorrencias.swift in Sources */,
 				41239E9528F840EB00D92C31 /* AppNotifica.xcdatamodeld in Sources */,
 				415C11DE290017470076ABED /* ButtonDefault.swift in Sources */,
 				E91DBF732C6CE46E00F6496F /* SobreViewController.swift in Sources */,

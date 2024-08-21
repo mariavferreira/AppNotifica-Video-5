@@ -107,4 +107,14 @@ class NovaOcorrenciaView: ViewDefault {
         imagem.image = Image
     }
     
+    @objc
+    func handleSave() {
+        let title = titleTextField.text ?? ""
+        let description=descriptionTextField.text ?? ""
+        let location = localizationTextField.text ?? ""
+        let status = statusTextField.text ?? ""
+        let ocorrencia = Ocorrencia(title: title, description: description,location: location, status: status)
+        viewModel.didTapSave(ocorrencia:ocorrencia)
+    }
+    
 }
